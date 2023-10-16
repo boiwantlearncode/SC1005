@@ -4,7 +4,7 @@
  (2) 'reg' is necessary when used in 'always' block AND its value is changed. Thus, x does not need reg
  (3) By default, variables are implicitly declared as 'wire', unless specified otherwise like 'reg'
 */
-module vsevenseg(input x[3:0], output reg seg_L[6:0]);
+module vsevenseg(input [3:0] x, output reg [6:0] seg_L);
   always @* 
   begin
     case(x)
@@ -29,8 +29,8 @@ module vsevenseg(input x[3:0], output reg seg_L[6:0]);
   end
 endmodule
 
-module vaddoflow(input a[3:0], b[3:0], output seg_L[6:0], oflow);
-    wire x[4:0];
+module vaddoflow(input [3:0] a, [3:0] b, output [6:0] seg_L, oflow);
+    wire sum[4:0];
     assign sum = a + b;
     
     vsevenseg (
