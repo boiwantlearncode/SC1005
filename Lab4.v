@@ -4,6 +4,8 @@
  (2) 'reg' is necessary when used in 'always' block AND its value is changed. Thus, x does not need reg
  (3) By default, variables are implicitly declared as 'wire', unless specified otherwise like 'reg'
 */
+
+// Put in module file named vsevenseg.v
 module vsevenseg(
     input [3:0] x,
     output reg [6:0] seg_L
@@ -28,10 +30,10 @@ module vsevenseg(
         4'd15:seg_L = 7'b000_1110;
         default: seg_L = 7'b111_1111;
     endcase
-  end
+    end
 endmodule
 
-
+// Put in module file named vaddoflow.v
 module vaddoflow(
     input [3:0] a,
     input [3:0] b,
