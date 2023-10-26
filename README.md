@@ -10,3 +10,8 @@ If there's any mistakes, please create an issue, thanks!
 ## Lab 4 Possible Prof Questions
 1. What is the meaning of the value in binary addition (part 2) if exceed?
 ANS: It is the carry
+
+## Leaderboards
+| Name             | Score       |
+| ----------- | ----------- |
+| Joel Tan Qin Xuan      | 1       |
