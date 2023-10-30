@@ -11,6 +11,9 @@ If there's any mistakes, please create an issue, thanks!
 1. What is the meaning of the value in binary addition (part 2) if exceed?
 ANS: It is the carry
 
+## Common mistakes
+1. Forgot to put constraint file. Will generate bitstream error.
+
 ## Leaderboards
 | Name             | Score       |
 | ----------- | ----------- |
