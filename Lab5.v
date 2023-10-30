@@ -37,9 +37,9 @@ module scroll(
     wire [3:0] a, b, c, d;
     
     assign a = count;
-    assign b = (count + 1) % 16;
-    assign c = (count + 2) % 16;
-    assign d = (count + 3) % 16;
+    assign b = count + 1;
+    assign c = count + 2;
+    assign d = count + 3;
     
     convert seg_1(.in(a), .out(display[15:12]));
     convert seg_2(.in(b), .out(display[11:8]));
